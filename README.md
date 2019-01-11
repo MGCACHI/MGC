@@ -1,2 +1,0 @@
-# MGC
-ssss
