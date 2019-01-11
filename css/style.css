@@ -33,12 +33,13 @@ html,body
 {
 	font-size: 150%;
 	font-family: "mgcfont";
-	margin-right: 100%; 
+	margin-right: 100px; 
 	color: white;
 }
 .cont1
 {
 	width: 49%;
+	height: 49%;
 	float: left;
 	vertical-align: middle;
 	margin-top: 10%;
@@ -50,18 +51,29 @@ html,body
 	float: right;
 	vertical-align: middle;
 	margin-top: 3.5%;
-
+    height: 49%;
 }
 .img1
 {
 	width: 20%;
 	float: right;
 }
-.conteiner
+.img2 
 {
-	margin-top: 5%;
+	margin: 20px;
+	width: 20%;
+	float: left;
 }
 .color
 {
 	background-color: yellow;
+
+}
+.clear
+{
+	clear: both;
+}
+.cont1,.cont2 p
+{
+	text-indent: 30px;
 }
