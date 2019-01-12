@@ -2,78 +2,95 @@ html,body
 {
 	width: 100%;
 	height: 100%;
-	background-color: #ff1744;
+	overflow: auto;
 }
-.body
+/*base css*/
+.float-right
 {
-      	height: 100%;
-      	margin: 1.6%;
-        background-color: #64dd17;
-        padding: 12%;
-
+	float: right;
 }
+.float-left
+{
+	float: left;
+}
+.clearfix:after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*base css*/
+
+/*header css*/
 .logo
 {
-	width: 7%;
-	border: 2px solid black;
-	vertical-align: middle;
-	float: right;
+	width: 50px;
+	display: inline-block;
+    border: 2px solid cornflowerblue;
+    margin: 30px auto 10px 30px;
+    vertical-align: middle;
 }
 .navigation
 {
-	float: right;
     display: inline-block;
-    vertical-align: middle; 
+    vertical-align: middle;
+    margin: 30px 50px;
 }
 .nav-li
 {
 	display: inline-block;
+	margin-left: 40px;
 }
-.text
+.nav-li:hover
 {
-	font-size: 150%;
-	font-family: "mgcfont";
-	margin-right: 100px; 
-	color: white;
-}
-.cont1
-{
-	width: 49%;
-	height: 49%;
-	float: left;
-	vertical-align: middle;
-	margin-top: 10%;
+	color: blue;
 
 }
-.cont2
+.nav-a:hover
 {
-	width: 49%;
-	float: right;
-	vertical-align: middle;
-	margin-top: 3.5%;
-    height: 49%;
+	font-size: 50px;
 }
-.img1
-{
-	width: 20%;
-	float: right;
-}
-.img2 
-{
-	margin: 20px;
-	width: 20%;
-	float: left;
-}
-.color
-{
-	background-color: yellow;
 
-}
-.clear
+.nav-a
 {
-	clear: both;
+	font-size: 30px;
+	font-family: mgcfont;
+	transition: all 0.5s;
+	line-height: 30px;
+	color: dodgerblue;
 }
-.cont1,.cont2 p
+.nav-li:after
 {
-	text-indent: 30px;
+	content: " ";
+	display: inline-block;
+	margin-left: 40px;
+	width: 2px;
+	height: 30px;
+	background-color: rgb(2,345,43);
 }
+.nav-li.none:after
+{
+	display: none;
+}
+.conteiner
+{
+	background-color: darkorange;
+}
+/*header css*/
+
+/*img*/
+.img-cont
+{
+	width: 100%;
+	height: 80%;
+    background-color: lightgrey;
+    text-align: center;
+}
+.img
+{
+	width: 50%;
+	margin-top: 3.8%;
+	cursor: pointer;
+}
+/*img*/
