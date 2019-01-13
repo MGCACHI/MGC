@@ -23,9 +23,15 @@ html,body
 /*base css*/
 
 /*header css*/
+.header
+{
+	max-width: 1170px;
+	width: 100%;
+    margin: 0 auto;
+}
 .logo
 {
-	width: 50px;
+	width: 4%;
 	display: inline-block;
     border: 2px solid cornflowerblue;
     margin: 30px auto 10px 30px;
@@ -54,8 +60,8 @@ html,body
 
 .nav-a
 {
-	font-size: 30px;
-	font-family: mgcfont;
+	font-size: 165%;
+	font-family: 'title';
 	transition: all 0.5s;
 	line-height: 30px;
 	color: dodgerblue;
@@ -73,24 +79,34 @@ html,body
 {
 	display: none;
 }
-.conteiner
-{
-	background-color: darkorange;
-}
 /*header css*/
 
 /*img*/
 .img-cont
 {
 	width: 100%;
-	height: 80%;
+	display: block;
     background-color: lightgrey;
     text-align: center;
 }
 .img
 {
-	width: 50%;
-	margin-top: 3.8%;
+    height: 476px;
+	padding: 4%;
 	cursor: pointer;
 }
 /*img*/
+
+/*blue section*/
+.blue-section
+{
+	background-color: #54d41f;
+	display: block;
+}
+.parent
+{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
+/*blue section*/
