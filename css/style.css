@@ -13,10 +13,8 @@ html,body
 {
 	float: left;
 }
-.clearfix:after
+.clear
 {
-	content: "";
-	display: block;
 	clear: both;
 }
 
@@ -31,6 +29,7 @@ html,body
 }
 .logo
 {
+	float: left;
 	width: 4%;
 	display: inline-block;
     border: 2px solid cornflowerblue;
@@ -39,6 +38,7 @@ html,body
 }
 .navigation
 {
+	float: left;
     display: inline-block;
     vertical-align: middle;
     margin: 30px 50px;
@@ -79,6 +79,41 @@ html,body
 {
 	display: none;
 }
+/*socialuri*/
+.soc-img
+{
+	height: 40px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.soc-img:hover
+{
+	height: 50px;
+}
+.social-tegs
+{
+	float: right;
+	margin: 35px auto;
+}
+.soc-li
+{
+	display: inline-block;
+}
+.soc-li:after
+{
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 40px;
+	background-color: blue;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.soc-li:last-child:after
+{
+	display: none;
+}
+/*socialuri*/
 /*header css*/
 
 /*img*/
