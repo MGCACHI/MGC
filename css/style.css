@@ -93,7 +93,7 @@
 .social-tegs
 {
 	float: right;
-	margin: 35px auto;
+	margin: 35px 50px 35px auto;
 }
 .soc-li
 {
@@ -165,5 +165,25 @@
 	width: 49%;
 	background-color: white;
 	margin-bottom: 32px;
+	position: relative;
+	text-align: justify;
+}
+.h1
+{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(19deg) skew(6deg);
+    transition: transform linear 0.4s 0.3s;
+    animation: mymove 5s 5;
+}
+.h1:hover
+{
+	 transform: translate(-50%,-50%) rotate(-19deg) skew(-6deg);
+}
+@keyframes mymove
+{
+	from{top: 20px}
+	to{top: 300px}
 }
 /*blue section*/
