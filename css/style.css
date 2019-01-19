@@ -173,17 +173,31 @@
 	position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(19deg) skew(6deg);
+    transform: translate(-50%,-50%) rotate(0) skew(0);
     transition: transform linear 0.4s 0.3s;
     animation: mymove 5s 5;
 }
-.h1:hover
-{
-	 transform: translate(-50%,-50%) rotate(-19deg) skew(-6deg);
-}
 @keyframes mymove
 {
-	from{top: 20px}
-	to{top: 300px}
+	0%
+	{
+		transform: translate(-50%,-50%) rotate(0) skew(0);
+	}
+	25%
+	{
+		transform: translate(-50%,-50%) rotate(90deg) skew(0);
+	}
+	50%
+	{
+		transform: translate(-50%,-50%) rotate(180deg) skew(0);
+	}
+	75%
+	{
+		transform: translate(-50%,-50%) rotate(270deg) skew(0);
+	}
+	100%
+	{
+		transform: translate(-50%,-50%) rotate(0) skew(0);
+	}
 }
 /*blue section*/
